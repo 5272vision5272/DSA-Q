@@ -20,6 +20,9 @@
 # comman in two array in O(a+b) complexity
 
 def common2(arr1,arr2):
+
+    # print(set(arr1)&set(arr2)) use set to find the comman between two array
+
     newd = dict()
     for i in arr1:
         newd[i]=True
@@ -32,7 +35,7 @@ def common2(arr1,arr2):
 
 
 arr1 = [1, 2, 3, 4, 5]
-arr2 = [6, 7, 5]
+arr2 = [6, 7]
 print(common2(arr1, arr2))
 
 # O(a+b)

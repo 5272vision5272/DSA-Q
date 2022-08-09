@@ -31,7 +31,7 @@ class hashtable :
             return False
 
 
-table = hashtable(2)
+table = hashtable(50)
 print(table.push('yes', 10))
 print(table.display('yes'))
 print(table.push('no', 12))

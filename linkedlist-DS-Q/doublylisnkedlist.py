@@ -42,6 +42,7 @@ class Linkedlist:      ##using as a wrapper class around the node class to imple
     def prepend(self,data):   ##adding new node next to head
         newnode = Node(data)
         newnode.next = self.head
+        self.head.prev = newnode
         self.head = newnode
         self.length+=1
         self.display()
@@ -108,7 +109,7 @@ daat = Linkedlist(100)
 daat.append(1)
 daat.append(12)
 daat.append(200)
-# daat.prepend(-1)
+daat.prepend(-1)
 print()
 daat.insert(192, 3)
 print("remove")

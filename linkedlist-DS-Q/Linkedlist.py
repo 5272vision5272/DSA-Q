@@ -67,6 +67,10 @@ class Linkedlist:      ##using as a wrapper class around the node class to imple
             self.length-=1
             self.display()
 
+        elif indx > self.length-1:
+            print("ERR code indx outofbpund")
+            return
+
         else:           ##saving pre node and cheching for next 2 node two replace the next node after given index
             cur = self.head
             for i in range(indx):

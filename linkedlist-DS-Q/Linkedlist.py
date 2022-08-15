@@ -75,6 +75,7 @@ class Linkedlist:      ##using as a wrapper class around the node class to imple
                 af = cur.next
 
             pre.next = af
+            self.length-=1
             self.display()
 
 
